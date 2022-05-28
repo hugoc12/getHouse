@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body{
+	background-color: #efefef;
+
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+}
+
+header{
+	height: 52px;
+	margin:40px 0;
+	grid-column: 1/13;
+
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo{
+	width: 180px;
+	height: 52px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo__icon{
+	display: block;
+	width: 52px;
+	height: 52px;
+}
+
+.logo__text{
+	display: block;
+	font-size: 25px;
+	margin-left: 4px;
+}
+
+.barraBusca{
+	position: relative;
+}
+
+.barraBusca__cxBusca{
+	width: 490px;
+	height: 52px;
+
+	border: solid 1px #dddddd;
+	border-radius: 5px;
+
+	font-size: 18px;
+
+	padding-left: 20px;
+
+	outline: none;
+}
+
+.barraBusca__icon{
+	width: 20px;
+	height: 20px;
+
+	position: absolute;
+	top: 16px;
+	left: 92%;
+
+	color:#9E9E9E;
+}
+
+.links{
+	width: 200px;
+	height: 52px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links__link{
+	text-decoration: none;
+	color:#000;
+}
+
+.btt{
+	width: 150px;
+	height: 52px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 4px;
+	border:none;
+}
+
+.btt--buscar{
+	background-color: #73A842;
+	color:#fff;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+/*MAIN*/
+
+
+main{
+	grid-column: 1/13;
+	background-color: #fff;
+
+	display: grid;
+
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: 1fr 860px 1fr;
+
+	grid-template-areas: "subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader"
+						 "grpCards grpCards grpCards grpCards grpCards grpCards aside aside aside aside aside aside"
+						 "paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao"
+
+}
+.subHeader{
+	grid-area: subHeader;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 70px;
+	margin: 30px 0;
+
+}
+
+.subHeader__txts-resul{
+	width: 250px;
+	height: 50px;
+	
+	text-align: center;
+
+	line-height: 25px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.subHeader__title{
+	font-weight: 700;
+}
+
+.subHeader__busca{
+	font-weight: 700;
+	color: #73A842;
+}
+
+.subHeader__infoBusca{
+	color: #9E9E9E;
+}
+
+.filtros{
+	width: 630px;
+	height: 70px;
+
+	margin:0 20px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.MultiThumbSlider{
+	margin:0;
+	width: 350px;
+	margin-bottom: 25px;
+}
+
+.MultiThumbSlider__ativa{
+	background-color: #73A842;
+}
+
+.MultiThumbSlider__cxValor{
+	background-color: #b0de86;
+}
+
+
+.filtros__inputs{
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.grpCards{
+	grid-area: grpCards;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.cardCasa{
+	width: 285px;
+	height: 430px;
+	background-color: #dddddd;
+	margin:10px;
+	border-radius: 4px;
+}
+
+.cardCasa__img{
+	width: 100%;
+	border-radius: 4px 4px 0 0;
+}
+
+.cardCasa__titulo{
+	font-size: 18px;
+	margin:12px 0;
+	margin-left: 10px;
+}
+
+.cardCasa__info{
+	display: block;
+	margin-bottom: 12px;
+	margin-left: 10px;
+
+	color: #828282;
+}
+
+.info--valor{
+	text-align: right;
+	margin-left: 0;
+	margin-right: 10px;
+	color: #73A842;
+	font-weight: 700;
+}
+
+.info--estadoHouseNova{
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.aside{
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.aside__imgMap{
+	width: 620px;
+}
+
+.card--selecionada{
+	background-color: #000;
+	width: 620px;
+}
+
+.titulo_select{
+	color: #fff;
+}
+
+.info--estadoHouseNova--select{
+	background-color: #fff;
+	color: #000;
+}
+
+.paginacao{
+	grid-area: paginacao;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.btt--pg{
+	width:50px;
+	height: 50px;
+	margin-left: 20px; 
+	cursor: pointer;
+}
+
+.btt-ultima{
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+/* -------------------- */
+
+@media screen and (max-width: 1023px){
+	header{
+		height: 180px;
+	}
+
+	.links{
+		display: none;
+	}
+
+	.barraBusca{
+		width: 90%;
+	}
+
+	.barraBusca__cxBusca{
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.btt--buscar{
+		width: 90%;
+	}
+
+	.subHeader{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		height: auto;
+	}
+
+	.filtros{
+		width: 100%;
+		height: auto;
+	}
+
+	.MultiThumbSlider{
+		height: 100px;
+		width: 320px;
+
+	}
+
+	.cxValor--Min{
+		right: 60%;
+		top: 0;
+	}
+
+	.cxValor--Max{
+		left: 60%;
+		top: 0;
+	}
+
+	.MultiThumbSlider__slider{
+		top: 10px;
+	}
+
+	#input-left, #input-right{
+		top: 50px;
+	}
+
+	.filtros__inputs{
+		width: 80%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.aside{
+		display: none;
+	}
+
+	main{
+		grid-template-rows: 280px 1fr 100px;
+		grid-template-areas: 	"subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader"
+						 		"grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards"
+						 		"paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao"
+	}
+
+	.paginacao{
+		flex-wrap: nowrap;
+	}
+
+	.btt--pg{
+		margin-left: 15px;
+	}
+
+	.btt-ultima{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1250px){
+	.aside{
+		display: none;
+	}
+
+	main{
+		grid-template-areas:"subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader subHeader"
+							"grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards grpCards"
+							"paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao paginacao"
+	}
+
+	.paginacao{
+		justify-content: center;
+	}
+}
+

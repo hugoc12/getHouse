@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VendaImóveis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="multiThumbRange/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<span class="iconify logo__icon" data-icon="noto:house" data-inline="false"></span>
+			<span class="logo__text">GetHouse</span>
+		</div>
+		<div class="barraBusca">
+			<input type="text" name="" class="barraBusca__cxBusca" placeholder="Adicionar uma rua, bairro, cidade ou cep">
+			<span class="iconify barraBusca__icon" data-icon="codicon:search" data-inline="false"></span>
+		</div>
+		<div class="links">
+			<a href="" class="links__link">Comprar</a>
+			<a href="" class="links__link">Vender</a>
+		</div>
+		<button class="btt btt--buscar">Buscar Casa</button>
+	</header>
+
+	<main>
+		<div class="subHeader">
+			<div class="subHeader__txts-resul">
+				<div class="subHeader__txt-titulo">
+					<span class="subHeader__title">Resultado de busca:</span>
+					<span class="subHeader__busca">Brasil</span>
+				</div>
+				<span class="subHeader__infoBusca">17 Propriedades Encontradas</span>
+			</div>
+
+			<div class="filtros">
+				<div class="MultiThumbSlider">
+					<div class="MultiThumbSlider__cxValor cxValor--Min"><span class="MultiThumbSlider__TextoVl TextoVl--Min">R$0</span></div>
+					<div class="MultiThumbSlider__cxValor cxValor--Max"><span class="MultiThumbSlider__TextoVl TextoVl--Max">R$1.000.000,00</span></div>
+					<input type="range" name="" id="input-left" min="0" max="100" value="0">
+					<input type="range" name="" id="input-right" min="0" max="100" value="100">
+					<div class="MultiThumbSlider__slider">
+						<div class="MultiThumbSlider__fundo"></div>
+						<div class="MultiThumbSlider__ativa"></div>
+						<div class="MultiThumbSlider__thumb thumb--left"></div>
+						<div class="MultiThumbSlider__thumb thumb--right"></div>
+					</div>
+				</div>
+				<div class="filtros__inputs">
+					<div><input type="checkbox" name="" checked="true"> <span>PROPRIEDADES NOVAS</span></div>
+					<div><input type="checkbox" name="" checked="true"> <span>A VENDA</span></div>
+					<div><input type="checkbox" name="" checked="true"> <span>ALUGUEL</span></div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="grpCards">
+			<div class="cardCasa">
+				<img src="imgs/house1.jpg" class="cardCasa__img">
+				<h1 class="cardCasa__titulo">Rua Jaime Rosa 222</h1>
+				<span class="cardCasa__info info--estadoHouseNova">NOVA</span>
+				<span class="cardCasa__info">10 Quartos</span>
+				<span class="cardCasa__info">4 Banheiros</span>
+				<span class="cardCasa__info">500M² Construidos</span>
+				<span class="cardCasa__info">1000M² Terreno</span>
+				<span class="cardCasa__info info--valor">R$1,000,000,00</span>
+			</div>
+
+			<div class="cardCasa">
+				<img src="imgs/house1.jpg" class="cardCasa__img">
+				<h1 class="cardCasa__titulo">Rua Jaime Rosa 222</h1>
+				<span class="cardCasa__info info--estadoHouseNova">NOVA</span>
+				<span class="cardCasa__info">10 Quartos</span>
+				<span class="cardCasa__info">4 Banheiros</span>
+				<span class="cardCasa__info">500M² Construidos</span>
+				<span class="cardCasa__info">1000M² Terreno</span>
+				<span class="cardCasa__info info--valor">R$1,000,000,00</span>
+			</div>
+
+			<div class="cardCasa">
+				<img src="imgs/house1.jpg" class="cardCasa__img">
+				<h1 class="cardCasa__titulo">Rua Jaime Rosa 222</h1>
+				<span class="cardCasa__info info--estadoHouseNova">NOVA</span>
+				<span class="cardCasa__info">10 Quartos</span>
+				<span class="cardCasa__info">4 Banheiros</span>
+				<span class="cardCasa__info">500M² Construidos</span>
+				<span class="cardCasa__info">1000M² Terreno</span>
+				<span class="cardCasa__info info--valor">R$1,000,000,00</span>
+			</div>
+
+			<div class="cardCasa">
+				<img src="imgs/house1.jpg" class="cardCasa__img">
+				<h1 class="cardCasa__titulo">Rua Jaime Rosa 222</h1>
+				<span class="cardCasa__info info--estadoHouseNova">NOVA</span>
+				<span class="cardCasa__info">10 Quartos</span>
+				<span class="cardCasa__info">4 Banheiros</span>
+				<span class="cardCasa__info">500M² Construidos</span>
+				<span class="cardCasa__info">1000M² Terreno</span>
+				<span class="cardCasa__info info--valor">R$1,000,000,00</span>
+			</div>
+		</div>
+
+		<aside class="aside">
+			<div class="aside__map">
+				<img src="imgs/mapLocalizacao.png" class="aside__imgMap">
+			</div>
+			<div class="cardCasa card--selecionada">
+				<img src="imgs/house1_select.jpg" class="cardCasa__img img--casaSelecionada">
+				<h1 class="cardCasa__titulo titulo_select">Rua Jaime Rosa 222</h1>
+				<span class="cardCasa__info info--estadoHouseNova info--estadoHouseNova--select">NOVA</span>
+				<span class="cardCasa__info">10 Quartos</span>
+				<span class="cardCasa__info">4 Banheiros</span>
+				<span class="cardCasa__info">500M² Construidos</span>
+				<span class="cardCasa__info">1000M² Terreno</span>
+				<span class="cardCasa__info info--valor">R$1,000,000,00</span>
+			</div>
+		</aside>
+
+		<div class="paginacao">
+			<button class="btt  btt--buscar btt--pg">1</button>
+			<button class="btt  btt--buscar btt--pg">2</button>
+			<button class="btt  btt--buscar btt--pg">3</button>
+			<button class="btt  btt--buscar btt--pg">4</button>
+			<button class="btt btt--buscar btt-ultima">Última Página</button>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+		var inputRangeLeft = document.getElementById('input-left');
+		var inputRangeRight = document.getElementById('input-right');
+		var barraAtiva = document.querySelector('.MultiThumbSlider__ativa');
+		var thumbLeft = document.querySelector('.thumb--left');
+		var thumbRight = document.querySelector('.thumb--right');
+
+		var cxValorMin = document.querySelector('.TextoVl--Min');
+		var cxValorMax = document.querySelector('.TextoVl--Max');
+
+		inputRangeLeft.addEventListener('input', function(){
+			console.log(inputRangeLeft.value);
+
+			var valor  =  new String(inputRangeLeft.value * 10000);
+			if (valor.length == 5) {
+				valor = valor.slice(0, 2);
+				cxValorMin.innerHTML = "R$" + valor + "." + "000" + ",00";
+				
+			}else if(valor.length == 6) {
+				valor = valor.slice(0, 3);
+				cxValorMin.innerHTML = "R$" + valor + "." + "000" + ",00";
+			}
+
+			
+			
+
+			var vlLeft = Math.min(parseInt(inputRangeLeft.value), parseInt(inputRangeRight.value) - 5);
+
+
+			inputRangeLeft.value = vlLeft;
+			barraAtiva.style.left = vlLeft + "%";
+			thumbLeft.style.left = vlLeft + "%";
+		});
+
+		inputRangeRight.addEventListener('input', function(){
+			console.log(inputRangeRight.value);
+
+			var valor  =  new String(inputRangeRight.value * 10000);
+			if (valor.length == 5) {
+				valor = valor.slice(0, 2);
+				cxValorMax.innerHTML = "R$" + valor + "." + "000" + ",00";
+				
+			}else if(valor.length == 6) {
+				valor = valor.slice(0, 3);
+				cxValorMax.innerHTML = "R$" + valor + "." + "000" + ",00";
+
+			}else if(valor.length == 7) {
+				cxValorMax.innerHTML = "R$1.000.000,00";
+			}
+
+			var vlRight = Math.max(parseInt(inputRangeLeft.value) + 5, parseInt(inputRangeRight.value));
+
+			inputRangeRight.value = vlRight;
+			barraAtiva.style.right = (100 - vlRight) + "%";
+			thumbRight.style.right = (100 - vlRight) + "%";
+		});</script>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>
